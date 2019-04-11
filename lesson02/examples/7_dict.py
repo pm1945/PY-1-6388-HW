@@ -77,7 +77,6 @@ print(f.popitem())
 print(f.setdefault('x', 'spam'))
 print(f)
 
-
 # Вывод отсортированных по ключу пар ключ/значение
 d = {'a': 'alpfa', 'b': 'beta', 'g': 'gamma'}
 print(dict)

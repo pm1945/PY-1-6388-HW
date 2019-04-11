@@ -7,8 +7,10 @@ class IterObj:
     """
     Объект-итератор
     """
+
     def __init__(self, start=0):
         self.i = start
+
     # Объект считается итератором - если у него есть метод __next__
 
     def __next__(self):
@@ -23,12 +25,14 @@ class Iter:
     """
     Объект, поддерживающий интерфейс итерации
     """
+
     def __init__(self, start=0):
         self.start = start - 1
 
     def __iter__(self):
         # Метод __iter__ должен возвращать объект итератор
         return IterObj(self.start)
+
 
 obj = Iter(start=2)
 

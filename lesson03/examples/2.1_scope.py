@@ -50,5 +50,6 @@ def wrapper():
     test2()
     test3()
 
+
 wrapper()
 print('after wrapper x = ', x)

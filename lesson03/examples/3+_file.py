@@ -27,4 +27,3 @@ with open(os.path.join(DIR, 'data'), 'r', encoding='UTF-8') as f:
     else:
         print("Искомая информация в файле '%s' не найдена" % f.name)
     # Файл будет автоматически закрыт по окончанию инструкции with
-

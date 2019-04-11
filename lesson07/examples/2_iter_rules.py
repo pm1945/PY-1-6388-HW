@@ -29,5 +29,3 @@ print(next(test_list_iter))
 print(next(test_list_iter))
 
 print(next(test_list_iter))  # Будет возбуждено исключение StopIteration
-
-

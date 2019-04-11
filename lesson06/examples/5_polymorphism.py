@@ -4,7 +4,7 @@
 
 print(2 + 4)
 print('2' + '4')
-print((2, 4)+(2, 4))
+print((2, 4) + (2, 4))
 
 
 class Student:
@@ -17,7 +17,7 @@ class Student:
 
     # метод
     def next_class(self):
-        self.class_room = str(int(self.class_room.split()[0]) + 1) + ' ' +\
+        self.class_room = str(int(self.class_room.split()[0]) + 1) + ' ' + \
                           self.class_room.split()[1]
 
     def get_full_name(self):
@@ -25,4 +25,3 @@ class Student:
 
     def set_name(self, new_name):
         self.name = new_name
-

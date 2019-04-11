@@ -2,6 +2,7 @@
 # python with_args.py param1 param2 param3
 import os
 import sys
+
 print('sys.argv = ', sys.argv)
 
 
@@ -26,6 +27,7 @@ def make_dir():
 def ping():
     print("pong")
 
+
 do = {
     "help": print_help,
     "mkdir": make_dir,
@@ -41,7 +43,6 @@ try:
     key = sys.argv[1]
 except IndexError:
     key = None
-
 
 if key:
     if do.get(key):

@@ -1,4 +1,5 @@
 import os
+
 print('os.name = ', os.name)
 print('os.environ = ', os.environ)
 print('os.getcwd() = ', os.getcwd())

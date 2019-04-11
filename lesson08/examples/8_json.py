@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 
-data = [{'a':'A', 'b':(2, 4), 'c':3.0 }]
+data = [{'a': 'A', 'b': (2, 4), 'c': 3.0}]
 print('DATA:', data)
 
 # Создание JSON из объекта
@@ -19,22 +19,11 @@ print('SORTED:', json.dumps(data, sort_keys=True))
 print('INDENT:', json.dumps(data, sort_keys=True, indent=4))
 
 # Плотная упаковка
-print('COMPRESSED:', json.dumps(data, separators=(',',':')))
+print('COMPRESSED:', json.dumps(data, separators=(',', ':')))
 
 # Формат JSON подразумевает, что ключами словаря являются строки
 # Если у вас есть другие ключи — то вызовется исключение TypeError.
 # Чтобы обойти это нужно использовать skipkeys
 
-data = [ { 'a':'A', 'b':(2, 4), 'c':3.0, ('d',):'D tuple' } ]
-print (json.dumps(data, skipkeys=True))
-
-
-
-
-
-
-
-
-
-
-
+data = [{'a': 'A', 'b': (2, 4), 'c': 3.0, ('d',): 'D tuple'}]
+print(json.dumps(data, skipkeys=True))

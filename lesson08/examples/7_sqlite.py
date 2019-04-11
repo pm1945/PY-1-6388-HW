@@ -9,7 +9,6 @@ db_filename = 'todo.db'
 conn = sqlite3.connect(db_filename)
 conn.close()
 
-
 # Создание схемы
 # Схема определяет таблицы в базе данных
 
@@ -27,11 +26,11 @@ with sqlite3.connect(db_filename) as conn:
     for i in range(10):
         conn.execute("""
             insert into project (name, description, deadline) VALUES (?,?,?)""", (
-                'project %s'%i, 
-                'project %s description'%i, 
-                datetime.date.today()+datetime.timedelta(days=i**2)
-            )
+            'project %s' % i,
+            'project %s description' % i,
+            datetime.date.today() + datetime.timedelta(days=i ** 2)
         )
+                     )
 
 with sqlite3.connect(db_filename) as conn:
     # Select
@@ -48,16 +47,5 @@ with sqlite3.connect(db_filename) as conn:
         print(name, description, deadline)
 
     # Update
-    cur.execute("update project set deadline=:deadline where name=:name", 
-        {'deadline': '2013-09-15', 'name': 'project 0'})
-
-
-
-
-
-
-
-
-
-
-
+    cur.execute("update project set deadline=:deadline where name=:name",
+                {'deadline': '2013-09-15', 'name': 'project 0'})

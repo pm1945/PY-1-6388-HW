@@ -14,7 +14,7 @@ b = float(equation_items[2])
 result = (k * x) + b
 
 # print('({} * {}) + {} = {}'.format(k, x, b, result))
-print(f'({k} * {x}) + {b} = {result}') # only Python 3.6+
+print(f'({k} * {x}) + {b} = {result}')  # only Python 3.6+
 
 # SECOND METHOD
 equation = equation.replace('x', f' * {x}')
@@ -131,7 +131,7 @@ if room > 0 and room <= 2000000000:
 
             # increment next floor index
             floor_index += 1
-        
+
         loop_index += 1
 else:
     print('Invalid room number')

@@ -25,7 +25,7 @@ dict_g = {key: value for key, value in zip(keys, values)}  # Подробнее 
 print('dict_g = ', dict_g)
 
 # Попроще пример создания словаря генератором
-dict2_g = {el: el+4 for el in [1, 4, 6, 8]}
+dict2_g = {el: el + 4 for el in [1, 4, 6, 8]}
 print('dict2_g =', dict2_g)
 
 # Генератор множества

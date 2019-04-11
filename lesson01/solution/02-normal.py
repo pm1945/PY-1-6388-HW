@@ -25,7 +25,7 @@ while counter < length:
 print(maximum)
 
 # 01-2 (not exactly)
-maximum = max(number) # <class 'str'> ENCODING SEARCH
+maximum = max(number)  # <class 'str'> ENCODING SEARCH
 
 # Задача-2: Исходные значения двух переменных запросить у пользователя.
 # Поменять значения переменных местами. Вывести новые значения на экран.

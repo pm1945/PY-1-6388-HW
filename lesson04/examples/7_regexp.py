@@ -68,7 +68,6 @@ string2 = 'The temperature can be in range 10- 15C next week ' \
           '-5 some time ago'
 print(re.findall(pattern2, string2))
 
-
 # Получим нужные данные из лога для дальнейшего анализа
 log = [
     '64 bytes from localhost.localdomain (127.0.0.1): '
@@ -90,7 +89,6 @@ html = '<p style="margin-left:10px;">text' \
        '<b class="super-bold">bold text</b>.</p>'
 pattern = '<[^>]+>'
 print(re.findall(pattern, html))
-
 
 # Распарсить url
 url = 'https://geekbrains.ru/streams/457/lessons/4026'

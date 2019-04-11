@@ -33,9 +33,11 @@ class MyList(list):
     """
     Список, индексы которого начинатся с 1, а не с 0
     """
+
     def __getitem__(self, offset):
         print('(indexing % s at % s)' % (self, offset))
         return list.__getitem__(self, offset - 1)
+
 
 x = MyList('abc')  # __init__ наследуется из списка
 print(x)  # __repr__ наследуется из списка

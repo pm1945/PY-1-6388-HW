@@ -4,7 +4,8 @@
 
 
 def mult(x):
-    return x**2
+    return x ** 2
+
 
 # Переменная a - ссылка на функцию
 a = mult
@@ -21,4 +22,3 @@ print((lambda x: x ** 2)(4))
 # Примеры использования:
 print(list(map(lambda x: x ** 2, [1, 2, 3, 4])))
 print(list(filter(lambda x: x > 0, [1, -2, 3, -4])))
-

@@ -1,6 +1,7 @@
 def simple_func():
     return "I'm simple_func"
 
+
 print("Test string")
 G = 10
 

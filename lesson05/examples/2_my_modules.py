@@ -17,6 +17,7 @@ import sys
 print(sys.path)
 
 import lesson05.examples.my_libs.lib1 as lib1
+
 print(lib1.do_something())
 
 # from lesson05.examples.my_libs.lib1 import do_something, more_then_one
@@ -26,6 +27,7 @@ print(lib1.do_something())
 # Путь прописываем от корня проекта
 # as - позволяет выбрать краткое имя для импортированного модуля
 import lesson05.examples.my_libs.lib1 as my_lib
+
 print(my_lib.more_then_one(4))
 
 # Или так
