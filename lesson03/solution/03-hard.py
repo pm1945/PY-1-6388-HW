@@ -111,7 +111,7 @@ import os
 
 
 def calculate_workers():
-    local_path = os.path.join(os.path.curdir, '03', 'data')
+    local_path = os.path.join(os.path.curdir, 'lesson03', 'solution', 'data')
 
     workers = []
 
@@ -133,7 +133,6 @@ def calculate_workers():
 
     with open(os.path.join(local_path, 'hours_of')) as f:
         lines = f.readlines()[1:]
-        workers_info = []
 
         for line in lines:
             worker_keys = ['name', 'surname', 'complete']
@@ -178,7 +177,7 @@ calculate_workers()
 # print(list(map(chr, range(ord('А'), ord('Я')+1))))
 
 def write_fruits():
-    local_path = os.path.join(os.curdir, '03', 'data')
+    local_path = os.path.join(os.curdir, 'lesson03', 'solution', 'data')
     f_path = os.path.join(local_path, 'fruits')
 
     if not os.path.exists(f_path):
@@ -190,9 +189,9 @@ def write_fruits():
     letters = {}
 
     for letter in range(ord('А'), ord('Я') + 1):
-        letters[chr(letter)] = f"fruit_{chr(letter)}"
+        letters[chr(letter)] = f"fruit_{chr(letter)}"  # fruit_A
 
-        filename = os.path.join(f_path, letters[chr(letter)])
+        filename = os.path.join(f_path, letters[chr(letter)])  # .../fruits/fruits_A
         if os.path.exists(filename):
             os.remove(filename)
 
@@ -203,4 +202,5 @@ def write_fruits():
         with open(filename, mode='a') as f:
             f.write(fruit)
 
-# write_fruits()
+
+write_fruits()
